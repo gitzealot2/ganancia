@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganancias de Productos</title>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    
+
+
+</head>
+<body>
+
+  <h1 onclick="clickfoto(event)" id="presentacion">Cálculo de Ganancias de Productos</h1>
+  <br>
+
+
+  
+  <img id="foto" src="excel.jpg"/>
+
+  <!--/////////////////////////////////////////////////////////////////////////////-->
+
+  <div id="caja">
+    <label>Entre informacion</label>  
+    <br>
+    <input type="text" placeholder="Producto" name="producto" id="producto"/>
+    <input type="text" placeholder="Pre. Costo" name="pcosto" id="pcosto"/>
+    <input type="text" placeholder="Pre. Venta" name="pventa" id="pventa"/>
+    <input type="text" placeholder="Cantidad" name="cantidad" id="cantidad"/>
+    <input type="button" name="caca" value="Entrar" onclick="botonentrar(event)">
+    <br>
+    <label for="ColumnaFija">Activar Columna fija</label>
+    <input type="checkbox" id="colfija" name="ColumnaFija"/>
+    </div>
+
+    <br>
+
+  <!--////////////////////////////////////////////////////////////////////////-->
+  <table id="tabla" onclick="cambiotabla(event)">
+    <thead>
+      <tr>
+       <th style="width: 150px;">Producto</th> 
+       <th>Precio Costo</th> 
+       <th>Precio Venta</th> 
+       <th>Cantidad</th> 
+       <th>Ganancia</th> 
+      </tr>  
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable>Audifonos</td>
+        <td contenteditable>$5</td>
+        <td contenteditable>$10</td>
+        <td contenteditable>13</td>
+        <td contenteditable style="background-color: #9c9c9c";>$65</td>
+      </tr>
+      <tr>
+        <td contenteditable>Mantequilla</td>
+        <td contenteditable>$1.20</td>
+        <td contenteditable>$2.80</td>
+        <td contenteditable>64</td>
+        <td contenteditable style="background-color: #9c9c9c";>$104</td>
+      </tr>
+      <tr>
+        <td contenteditable>Nano M2</td>
+        <td contenteditable>$65</td>
+        <td contenteditable>$120</td>
+        <td contenteditable>4</td>
+        <td contenteditable style="background-color: #9c9c9c";>$220</td>
+      </tr>
+      <tr>
+        <td contenteditable></td>
+        <td contenteditable>$0</td>
+        <td contenteditable>$0</td>
+        <td contenteditable>0</td>
+        <td style="background-color: #9c9c9c";> </td>
+      </tr>
+      
+      
+
+    </tbody>
+  </table>
+  <!--////////////////////////////////////////////////////////////////////////-->
+
+   
+
+
+  <br>
+
+  
+  <div id="buscar">
+  <input type="file" accept=".dav" id="examinar">
+  <button id="procesar" onclick="process()">Precesar</button>
+  </div>
+ 
+
+ 
+    
+
+ <script src="app.js"></script>   
+
+</body>
+</html>
